@@ -6,36 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <title>SoMe Project</title>
 </head>
 
 <body>
-    <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
-        <h5 class="w3-bar-item">SoMe Project</h5>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'London')">London</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    <div class="contents">
+        <div class="content">
+            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+                <!--Little title-->
+
+                <h5 class="w3-bar-item title">SoMe Project</h5>
+                <!--Tablinks here-->
+
+                <button id="Insta" class="w3-bar-item w3-button tablink"
+                    onclick="openCity(event, 'Instagram')">Instagram</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TikTok')">TikTok</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Facebook')">Facebook</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Something')">Something</button>
+            </div>
+
+            <div style="margin-left:130px">
+                <div class="w3-padding"></div>
+                <!--Tab content is here-->
+            </div>
+        </div>
+        <div class="content">
+            <div id="Instagram" class="w3-container city" style="display:none">
+                <h1>Instagram</h1>
+                <br>
+                <h2>Profile</h2>
+                <div class="profilecontainer">
+                    <div class="profileitem"><img src="Placeholder.png" alt="ig profile pic" style="width:100px;height:100px;"></div>
+                    <div class="profileitem"><p>Hey, we are BAAA, join the BAAA army now!</p></div>
+                </div>
+                <br>
+                <h2>Images</h2>
+                <div class="igimagecontainer">
+                    <div class="igimageitem"><img src="squarechicks/chick1.png" alt="ig profile pic" style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick2.jpg" alt="ig profile pic" style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick3.jpg" alt="ig profile pic"style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick4.jpg" alt="ig profile pic" style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick5.jpg" alt="ig profile pic" style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick6.jpg" alt="ig profile pic" style="width:300px;height:300px;"></div>
+                </div>
+                <h2>Stories</h2>
+            </div>
+
+            <div id="TikTok" class="w3-container city" style="display:none">
+                <h2>TikTok</h2>
+            </div>
+
+            <div id="Facebook" class="w3-container city" style="display:none">
+                <h2>Facebook</h2>
+            </div>
+
+            <div id="Something" class="w3-container city" style="display:none">
+                <h2>Something</h2>
+            </div>
+
+        </div>
     </div>
-
-    <div style="margin-left:130px">
-        <div class="w3-padding">Vertical Tab Example (sidebar)</div>
-        <!--Menu items-->
-
-        <div id="London" class="w3-container city" style="display:none">
-            <h2>Instagram</h2>
-        </div>
-
-        <div id="Paris" class="w3-container city" style="display:none">
-            <h2>TikTok</h2>
-        </div>
-
-        <div id="Tokyo" class="w3-container city" style="display:none">
-            <h2>Facebook</h2>
-        </div>
-
     </div>
-
     <script>
+        //All its copied from w3, thats why the city names, but it works<3
         function openCity(evt, cityName) {
             var i, x, tablinks;
             x = document.getElementsByClassName("city");
