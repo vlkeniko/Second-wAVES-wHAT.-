@@ -51,11 +51,21 @@ table {
 
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 button {
     border: none;
     background-color: rgb(239, 239, 239);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+button:hover{
+    border: none;
+    background-color: rgb(239, 239, 239);
+    color: rgb(255, 0, 85);
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 20px;
@@ -71,6 +81,9 @@ button {
     height: 100%;
     min-height: 100vh;
     box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
+    position: fixed;
+    top: 0;
+    
 }
 
 .contents {
@@ -80,9 +93,9 @@ button {
 
 .title {
     padding: 10px;
-    color: rgb(255, 75, 135);
+    color: rgb(255, 0, 85);
     font-size: 20px;
-    background-color: rgb(139, 239, 239);
+    background-color: rgb(5, 228, 228);
     text-align: center;
     font-weight: 600;
 
@@ -100,8 +113,9 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:40px;
+    gap: 40px;
     justify-content: center;
+    margin-left: 200px;
 }
 
 .igimagecontainer {
@@ -112,15 +126,29 @@ button {
     justify-content: center;
     max-width: 1000px;
     margin-left: 150px;
+    margin-left: 200px;
 }
 
-h2{
+h2 {
     padding-bottom: 30px;
-    text-align: center;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 230px;
+    font-size: 20px;
 }
 
-h1{
+h1 {
+    text-align: center;
     padding: 20px;
     font-weight: bold;
     font-size: 24px;
+    margin-left: 200px;
+}
+
+.videocontainer{
+    display:flex;
+    gap: 50px;
+    justify-content: center;
+    margin-left: 350px;
+    margin-right: auto;
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="jaj.ico">
+    <title>SoMe Project</title>
+</head>
+
+<body>
+    <div class="contents">
+        <div class="content">
+            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+                <!--Little title-->
+
+                <h5 class="w3-bar-item title">SoMe Project</h5>
+                <!--Tablinks here-->
+                <button id="Insta" class="w3-bar-item w3-button tablink" onclick="openCity(event, '4-week')">4-week
+                    plan</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'year')">Year plan</button>
+
+                <button id="Insta" class="w3-bar-item w3-button tablink"
+                    onclick="openCity(event, 'Instagram')">Instagram</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TikTok')">TikTok</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Facebook')">Facebook</button>
+
+            </div>
+
+            <div style="margin-left:130px">
+                <div class="w3-padding"></div>
+                <!--Tab content is here-->
+            </div>
+        </div>
+        <div class="content">
+            <div id="Instagram" class="w3-container city" style="display:none">
+                <h1>Instagram</h1>
+                <br>
+                <h2>Profile</h2>
+                <div class="profilecontainer">
+                    <div class="profileitem"><img src="Placeholder.png" alt="ig profile pic"
+                            style="width:100px;height:100px;"></div>
+                    <div class="profileitem">
+                        <p>Hey, we are BAAA, join the BAAA army now!</p>
+                    </div>
+                </div>
+                <br>
+
+
+                <!--The images overview, to see the wave theme-->
+                <h2>Images</h2>
+
+                <div class="igimagecontainer">
+                    <div class="igimageitem"><img src="squarechicks/chick1.png" alt="ig profile pic"
+                            style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick2.jpg" alt="ig profile pic"
+                            style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick3.jpg" alt="ig profile pic"
+                            style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick4.jpg" alt="ig profile pic"
+                            style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick5.jpg" alt="ig profile pic"
+                            style="width:300px;height:300px;"></div>
+                    <div class="igimageitem"><img src="squarechicks/chick6.jpg" alt="ig profile pic"
+                            style="width:300px;height:300px;"></div>
+                </div>
+
+                <!-- 8 Individual posts, in frame, with description, we can add the frame in illustrator pls-->
+                <h2>Posts</h2>
+
+                <div class="igimagecontainer">
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+                    <div class="igimageitem"><img src="imagetemplates/postexample.JPG" alt="ig profile pic"
+                            style="width:400px;"></div>
+
+                </div>
+                <!--Comics, and infographics in order, same thing i guess just different view-->
+
+                <h2>Stories</h2>
+            </div>
+
+            <div id="TikTok" class="w3-container city" style="display:none">
+                <h1>TikTok</h1><br>
+                <div class="videocontainer">
+                    <video class="tiktok" width="220" controls>
+                        <source src="video-1650921141.mp4" type="video/mp4">
+                    </video>
+
+                    <video class="tiktok" width="220" controls>
+                        <source src="video-1650921141.mp4" type="video/mp4">
+                    </video>
+
+                    <video class="tiktok" width="220" controls>
+                        <source src="video-1650921141.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div id="Facebook" class="w3-container city" style="display:none">
+                <h1>Facebook</h1>
+            </div>
+
+            <div id="4-week" class="w3-container city" style="display:none">
+                <h1>4-week plan</h1>
+            </div>
+
+            <div id="year" class="w3-container city" style="display:none">
+                <h1>Year plan</h1>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script>
+        //All its copied from w3, thats why the city names, but it works<3
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+        }
+    </script>
+</body>
+
+</html>
