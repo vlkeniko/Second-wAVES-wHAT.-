@@ -55,7 +55,6 @@ table {
 
 body {
     font-family: 'Poppins', sans-serif;
-    
 }
 
 button {
@@ -87,7 +86,6 @@ button:hover{
     box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
     position: fixed;
     top: 0;
-    
 }
 
 .contents {
@@ -102,7 +100,6 @@ button:hover{
     background-color: rgb(5, 228, 228);
     text-align: center;
     font-weight: 600;
-
 }
 
 .w3-bar-item {
@@ -153,7 +150,7 @@ h1 {
     margin-left: 200px;
 }
 
-.videocontainer{
+.videocontainer {
     display:flex;
     gap: 50px;
     justify-content: center;
@@ -162,30 +159,29 @@ h1 {
 }
 
 
-.targetbox{
-display: flex;
-justify-content: center;
-margin-left: 100px;
-margin-top: 100px;
-gap: 20px;
-align-items: center;
-
+.targetbox {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 20px;
+    align-items: center;
 }
 
-.target{
+.target {
     height: auto;
 }
 
-.tonetext{
+.tonetext {
     margin-left: 20%;
     margin-right: 14%;
 }
 
-p{
+p {
     line-height: 26px;
 }
 
-.tonetitle{
+.tonetitle {
     margin-top: 20px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -194,7 +190,7 @@ p{
     color: rgb(255, 0, 85);
 }
 
-.li{
+.li {
     list-style-type: circle;
     margin-left: 30px;
     margin-top: 10px;
@@ -202,16 +198,16 @@ p{
     font-weight: bold;
 }
 
-.tonelist{
+.tonelist {
     margin-left:30px;
 }
 
-.description{
+.description {
     margin-left: 230px;
     margin-right: 14%;
 }
 
-.yearplan{
+.yearplan {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -225,30 +221,27 @@ p{
     min-width: 380px;
 }
 
-li{
+li {
     list-style-type: circle;
     margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
-.month{
+.month {
     margin-top: 20px;
     margin-bottom: 15px;
     font-weight: bold;
     font-style:italic;
     font-size: 20px;
     color: rgb(255, 0, 85);
-    
 }
 
-.table{
+.table {
     margin-left:80px;
 }
 
-.targeta{
-   
+.targeta {
     margin-left: 230px;
     margin-right: 100px;
 }
